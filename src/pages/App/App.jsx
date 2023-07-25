@@ -3,8 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
-import NewOrderPage from '../NewOrderPage/NewOrderPage';
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+// import NewOrderPage from '../NewOrderPage/NewOrderPage';
+// import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import NotesPage from '../NotesPage/NotesPage';
 import NavBar from '../../components/NavBar/NavBar';
 
@@ -19,8 +19,8 @@ export default function App() {
             <Routes>
               {/* Route components in here */}
               <Route path="/notes" element={<NotesPage />} />
-              <Route path="/orders/new" element={<NewOrderPage />} />
-              <Route path="/orders" element={<OrderHistoryPage />} />
+              {/* <Route path="/orders/new" element={<NewOrderPage />} />
+              <Route path="/orders" element={<OrderHistoryPage />} /> */}
             </Routes>
           </>
           :
